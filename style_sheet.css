@@ -1,0 +1,272 @@
+*{
+    font-family: 'Times New Roman';
+    padding: 0;
+    margin: 0;
+    text-transform: capitalize;
+    box-sizing: border-box;
+}
+#content{
+    height: 500px;
+    background-color: rgb(69, 69, 74);
+}
+nav{
+    height: 60px;
+    width: 100%;
+    background-color: #0f1111;
+    position: fixed;
+    top: 0px;
+}
+#logo{
+    font-size: 35px;
+    color: #f08804;
+    text-transform: uppercase;
+    box-shadow: none;
+
+}
+nav a{
+    margin-right: 100px;
+    font-size: 20px;
+    text-decoration: none;
+    color: aliceblue;
+    box-shadow: 0 0 15px rgb(2, 169, 247);
+    transition: color 0.3s; 
+    border-radius: 20%;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+nav a:hover {
+    color: black;
+    background-color: rgb(45, 168, 216);
+}
+
+.part1{
+    height: 210px;
+    width: 175px;
+    border: 5px solid #0f1111;
+    background-color: #f08804;
+    display: inline-block;
+    margin-top: 130px;
+    background-image: url("https://i.ibb.co/L5zG8Bs/Whats-App-Image-2023-10-25-at-20-57-24-fe57fd31.jpg");
+    background-size: cover;
+    position: absolute;
+    right: 50px;
+    border-radius: 25%;
+    box-shadow: 0 0 20px #0ef;
+}
+.part1:hover{
+    box-shadow: 0 0 20px rgb(206, 35, 12);
+}
+.hero-container{
+    margin-top: 50px;
+    display: flex;
+    padding: 25px 10px;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+}
+
+.info-side h3{
+    font-size: 30px;
+    font-weight: 700;
+    margin: 10px 0;
+    letter-spacing: 1px;
+    color: aliceblue;
+}
+
+.info-side h1{
+    font-size: 75px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    background-image: url("https://media.istockphoto.com/id/964375828/vector/horizon-paint.jpg?s=1024x1024&w=is&k=20&c=_Wtzq6fCwN0gddHg9kLoY7w_l4olh1_RPZ9o63US_Fk=");
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: slideRight 0.5s ease forwards;
+    opacity: 0;
+    animation-delay: 1s;
+}
+ .info-side h3 span{
+    color: #0ef;
+}
+
+.part-1{
+    animation: part1 1s ease forwards;
+    opacity: 0;
+}
+.part-2{
+    animation: part2 1s ease forwards;
+    opacity: 0;
+}
+
+p{
+    line-height: 27px;
+    margin: 20px 0px 40px 0px;
+    animation: slideLeftP 1s ease forwards;
+    opacity: 0;
+    animation-delay: 1.2s;
+}
+ .hero-img img{
+    width: 350px;
+}
+
+i{
+    position: relative;
+    border: 2px solid #0ef;
+    padding: 10px;
+    border-radius: 50%;
+    color: #0ef;
+    margin: 0px 8px;
+    transition: 0.3ms;
+    animation: socialIcons 1s ease forwards;
+    opacity: 0;
+    animation-delay: calc(.3s * var(--i));
+}
+
+i:hover{
+    box-shadow: 0 0 20px #0ef;
+}
+
+button{
+    background-color: #0ef;
+    margin-top: 50px;
+    padding: 20px 70px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: .3s;
+    box-shadow: 0 0 15px #0ef;
+}
+
+button:hover{
+    box-shadow: none;
+}
+
+#rvu{
+    text-transform: uppercase;
+    display: inline;
+
+}
+footer{
+    background-color: grey;
+    text-align: center;
+    font-size: larger;
+}
+.phone-icon::before {
+    content: "\260E"; 
+    font-size: 24px;
+    margin-right: 5px; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes slideleft{
+    0%{
+        transform: translateX(-100px);
+        opacity: 1;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }    
+}
+@keyframes navMenu{
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes part1{
+    0%{
+        transform: translateY(-100px);
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }    
+}
+@keyframes part2{
+    0%{
+        transform: translateY(100px);
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }    
+}
+@keyframes slideRight{
+    0%{
+        transform: translateX(-100px);
+        opacity: 1;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }    
+}
+@keyframes slideLeftP{
+    0%{
+        transform: translateX(100px);
+        opacity: 1;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }    
+}
+@keyframes socialIcons{
+    0%{
+        transform: translateX(100px);
+        opacity: 1;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }    
+}

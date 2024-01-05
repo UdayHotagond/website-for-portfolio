@@ -1,0 +1,81 @@
+*{
+    background-color: rgb(181, 172, 172);
+    color: white;
+}
+h1{
+    font-size: 100px;
+    font-weight: 1000;
+    background-image: url("https://media.istockphoto.com/id/521577939/photo/advance-of-inner-paint.jpg?s=1024x1024&w=is&k=20&c=N__S41JapzcrEEkTF59GCOEdVkNZ9BRtQv_EqCs4wjk=");
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: center;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+}
+.social {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.media- {
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    border-radius: 25%;
+    background-image: url("https://png.pngtree.com/background/20230618/original/pngtree-abstract-3d-gray-paper-cut-art-background-design-for-presentations-website-picture-image_3753398.jpg");
+    background-size: cover;
+}
+
+.tooltip {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+    background-color: #333;
+    color: #fff;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 14px;
+    white-space: nowrap;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+}
+
+.uil {
+    font-size: 100px;
+    color: #f4ecec;
+    transition: color 0.3s;
+    border-radius: 25%;
+    background-image: url("https://png.pngtree.com/background/20230618/original/pngtree-abstract-3d-gray-paper-cut-art-background-design-for-presentations-website-picture-image_3753398.jpg");
+    background-size: cover;
+}
+
+.social .media-:hover .uil {
+    color: #007bff; /* Change the color on hover */
+}
+
+.tooltip-top {
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.tooltip-bottom {
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.tooltip-left {
+    top: 50%;
+    left: -120px;
+    transform: translateY(-50%);
+}
+
+.tooltip-right {
+    top: 50%;
+    right: -120px;
+    transform: translateY(-50%);
+}
